@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+
+            #    = id
+            .    = class
+            :    = pseudo-class
+            ::   = pseudo-element
+            >    = children
+        */
+        body{
+            background-color: aliceblue;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+       }
+        a:visited{
+            color:blueviolet
+       }
+        a:hover{
+            color: blue;
+        }
+        a:active{
+            color: black;
+        }
+        .especial{
+            background-color: rgb(138, 233, 138);
+        }
+        a::after{
+            content: ' abra';   
+            text-decoration: none;
+            color: silver;
+        }
+        .especial::before{
+            content: 'bagui ';
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+   <ul>
+    <li><a href="https://www.google.com/" target="_blank">Primeiro link</a></li>
+    <li><a href="https://www.youtube.com/" target="_blank" class="especial">Segundo link</a></li>
+    <li><a href="https://www.bing.com/ck/a?!&&p=295826d8f8e2dfc657313ce6de02f55700647fab389133ee4af005b4f1bc8405JmltdHM9MTY1NjUzODE2NyZpZ3VpZD1kMDcwNzMzZC0zNjVlLTQ5MzQtOTIwYi1lYjMzMWQ3YTEyNGMmaW5zaWQ9NTE2MA&ptn=3&fclid=8dc4f98c-f7f2-11ec-87a5-8ae2dbf244ac&u=a1aHR0cHM6Ly9nZS5nbG9iby5jb20vYWwvZnV0ZWJvbC90aW1lcy9hc2Ev&ntb=1" target="_blank">Terceiro link</a></li>
+   </ul>
+</body>
+</html>
