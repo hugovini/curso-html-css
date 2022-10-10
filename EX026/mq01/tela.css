@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Estilo para Telas*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: lightgrey;
+}
+header > h1{
+    text-align: center;
+}
+menu ul{
+    background-color: gray;
+}
+menu li{
+    background-color: darkslategrey;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+}
+main{
+    display: block;
+    margin: auto;
+    width: 600px;
+}
